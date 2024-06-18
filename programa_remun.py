@@ -57,6 +57,14 @@ def reg_trabajador():
     
 
 def listar_trabajador():
+    system("cls")
+    print(f"Nombres\t        Cargo\t   Sueldo_Bruto\t Desc_salud\t Desc_afp\t Liquido\t")
+    for trabajador in lista_trabajador:
+         print(f"{trabajador['nombres']}\t {trabajador['cargo']}\t   {trabajador['sueldo_bruto']}\t  {trabajador['desc_salud']}\t   {trabajador['desc_afp']}\t  {trabajador['liquido']}\t" )
+    input()
+    return 
+     
+
     print('Has elegido la opción 2')
     input()
 
