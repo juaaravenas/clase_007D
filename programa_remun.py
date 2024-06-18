@@ -64,15 +64,12 @@ def listar_trabajador():
     input()
     return 
      
-
-    print('Has elegido la opción 2')
-    input()
-
-
-def imprimir_trabajador():
-    print('Has elegido la opción 3')
-    input()
-
+def imprimir_trabajador():4
+    with open(r"C:\Users\cetecom\Documents\salida.txt", "w", newline='') as archivo:
+        archivo.write(f"Nombres\t        Cargo\t   Sueldo_Bruto\t Desc_salud\t Desc_afp\t Liquido\t\n")
+        for lista  in  lista_trabajador:
+          archivo.write(f"{lista['nombres']}\t {lista['cargo']}\t   {lista['sueldo_bruto']}\t  {lista['desc_salud']}\t   {lista['desc_afp']}\t  {lista['liquido']}\t\n" )
+     
 
 def salir():
     print('Saliendo')
