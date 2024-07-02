@@ -78,7 +78,7 @@ def imprimir_trabajador():
     menu_p2()
 
 def imp_reg_trabajador_cargo():
-    with open(r"C:\Users\cetecom\Documents\salida_cargo.txt", "w", newline='') as archivo:
+    with open(r"salida_cargo.txt", "w", newline='') as archivo:
         archivo.write(f"Nombres\t        Cargo\t   Sueldo_Bruto\t Desc_salud\t Desc_afp\t Liquido\t\n")
         system("cls")
         cargo= input("Ingrese el cargo a imprimir ")
@@ -88,7 +88,7 @@ def imp_reg_trabajador_cargo():
      
 
 def imp_reg_trabajador_todo():
-    with open(r"C:\Users\cetecom\Documents\salida_todo.txt", "w", newline='') as archivo:
+    with open(r"salida_todo.txt", "w", newline='') as archivo:
         archivo.write(f"Nombres\t        Cargo\t   Sueldo_Bruto\t Desc_salud\t Desc_afp\t Liquido\t\n")
         for lista  in  lista_trabajador:
           archivo.write(f"{lista['nombres']}\t {lista['cargo']}\t   {lista['sueldo_bruto']}\t  {lista['desc_salud']}\t   {lista['desc_afp']}\t  {lista['liquido']}\t\n" )
